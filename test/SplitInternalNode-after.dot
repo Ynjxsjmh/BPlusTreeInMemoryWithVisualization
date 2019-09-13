@@ -1,0 +1,32 @@
+digraph G {
+node [shape = record];
+
+0:ptr0:s->1;
+0:ptr1:s->2;
+0 [label="{{ <key0>13 | <key1>null | <key2>null | <key3>null }|{ <ptr0> | <ptr1> | <ptr2> | <ptr3> | <ptr4> }}"]
+{rank = same; 0;}
+
+1:ptr0:s->3;
+1:ptr1:s->4;
+1:ptr2:s->5;
+2:ptr0:s->6;
+2:ptr1:s->7;
+2:ptr2:s->8;
+1 [label="{{ <key0>5 | <key1>9 | <key2>null | <key3>null }|{ <ptr0> | <ptr1> | <ptr2> | <ptr3> | <ptr4> }}"]
+2 [label="{{ <key0>17 | <key1>19 | <key2>null | <key3>null }|{ <ptr0> | <ptr1> | <ptr2> | <ptr3> | <ptr4> }}"]
+{rank = same; 1; 2;}
+
+3 [label=" <key0>1 | <key1>2 | <key2>3 | <key3>4 "]
+4 [label=" <key0>5 | <key1>6 | <key2>7 | <key3>8 "]
+5 [label=" <key0>9 | <key1>10 | <key2>11 | <key3>12 "]
+6 [label=" <key0>13 | <key1>14 | <key2>15 | <key3>16 "]
+7 [label=" <key0>17 | <key1>18 | <key2>null | <key3>null "]
+8 [label=" <key0>19 | <key1>20 | <key2>21 | <key3>null "]
+{rank = same; 3; 4; 5; 6; 7; 8;}
+
+3->4 [dir=both];
+4->5 [dir=both];
+5->6 [dir=both];
+6->7 [dir=both];
+7->8 [dir=both];
+}

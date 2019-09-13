@@ -1,0 +1,14 @@
+digraph G {
+node [shape = record];
+
+0:ptr0:s->1;
+0:ptr1:s->2;
+0 [label="{{ <key0>4 | <key1>null | <key2>null | <key3>null }|{ <ptr0> | <ptr1> | <ptr2> | <ptr3> | <ptr4> }}"]
+{rank = same; 0;}
+
+1 [label=" <key0>2 | <key1>3 | <key2>null | <key3>null "]
+2 [label=" <key0>4 | <key1>5 | <key2>null | <key3>null "]
+{rank = same; 1; 2;}
+
+1->2 [dir=both];
+}
